@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --blue:rgb(0,88,251);
+}
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card-box{
+    width: 450px;
+    height: 550px;
+    position: relative;
+    border: none;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 grey;
+}
+.upper-blue{
+    width: 100%;
+    height: 36%;
+    background-color: var(--blue);
+    position: relative;
+}
+.profile-pic{
+    height:150px;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%,-50%);
+    border-radius: 200px;
+    border-style: solid;
+    padding: 2px;
+    background-color: white;
+    border-color: var(--blue);
+}
+.name{
+    margin-top: 60px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.profession{
+    display: flex;
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    justify-content: center;
+}
+.socials{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 20px;
+    align-content: center;
+    vertical-align: middle;
+}
+.facebook{
+    color: white;
+    background-color:rgb(90, 90, 247);
+    padding: 8px;
+    border-radius: 20px;
+}
+.twitter{
+    color:white;
+    background-color: rgb(90, 132, 246);
+    padding: 8px;
+    border-radius: 20px;
+}
+.instagram{
+    color:white;
+    background-color:rgb(230, 6, 159);
+    padding: 8px;
+    border-radius: 20px;
+}
+.youtube{
+    background-color: red;
+    color:white;
+    padding: 8px;
+    border-radius: 20px;
+}
+.button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.subscribe{
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:var(--blue);
+    color:white;
+    font-size: 14px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.message{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:var(--blue);
+    color:white;
+    font-size: 14px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.message:hover , .subscribe:hover{
+    background-color:blue;
+}
+
+.reactions{
+    display: flex;
+    justify-content: space-around;
+    margin-top:50px;
+    column-gap: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.heart{
+    color: black;
+    float: left;
+}
+.comment{
+    flex-grow: 2;
+    color:black;
+    float: left;
+    border-left: solid;
+    border-right: solid;
+    border-color: rgb(188, 188, 188);
+    padding-right: 30px;
+    padding-left: 30px;
+    border-width: 2px;
+}
+.share{
+    color: black;
+    float: left;
+}
+a{
+    text-decoration: none;
+    color:black;
+    vertical-align: middle;
+}
+p{
+    display: inline;
+}
